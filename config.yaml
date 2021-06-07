@@ -1,7 +1,6 @@
 #cloud-config
 ssh_authorized_keys:
-  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8N8bd90yN8bKUPvRRgYafuLz7MaG2mFFVJQsqFIqV6R/9H+LMICD4m0diygNoBZXsNBVbG2fgV3glJukfnGxbfQQJgTAZyediVx+eLBNw2
-rancher:
+  - ssh-rsa .........
   resize_device: /dev/sda
   recovery: false
   debug: false
