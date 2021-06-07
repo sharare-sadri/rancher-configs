@@ -1,0 +1,15 @@
+#cloud-config
+rancher:
+  services:
+    nfs:
+      container_neame: nfs-server
+      image: itsthenetwork/nfs-server-alpine
+      net: host
+      restart: always
+      labels:
+        io.rancher.os.scope: system
+        io.rancher.os.detach: "true"
+        io.rancher.os.reloadconfig: "true"
+        io.rancher.os.after: network
+      volumes:
+        - "nfs:/data"
